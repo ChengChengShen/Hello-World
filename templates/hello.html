@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body> 
+    <h1>正序</h1>
+    <ul>
+        {% for item in hello %}
+        <li>{{item}}</li>
+        {% endfor %}
+    </ul>
+    <h1>反序</h1>
+    <ol>
+        {% for item in hello reversed %}
+        <li>{{item}}</li>
+        {% endfor %}
+    </ol>
+
+    <h1>{{hello}}</h1>
+</body>
+</html>
